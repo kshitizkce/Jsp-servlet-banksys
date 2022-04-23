@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class Data {
 	public static Connection dbconnect() {
 		try {
-			Class.forName("org.h2.Driver");
+			Class.forName("org.mysql.Driver");
 			Connection con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa", " ");
 			return con;
 
